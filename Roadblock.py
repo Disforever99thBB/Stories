@@ -4,7 +4,7 @@ from tkinter import messagebox
 #密码逼
 CORRECT_PASSWORD = "#1980000"
 #神秘小网站
-UNLOCK_URL = "https://github.com/Disforever99thBB"
+UNLOCK_URL = "We are together"
 
 def verify_password():
     """验证"""
@@ -18,6 +18,8 @@ def verify_password():
         # False
         password_entry.delete(0, tk.END)
         messagebox.showerror("错误", "这个密码不能匹配该用户下的任何空间或隐私空间")
+
+
 
 
 def on_enter_key(event):
@@ -37,7 +39,7 @@ menubar = tk.Menu(root)
 
 #菜单
 file_menu = tk.Menu(menubar, tearoff=0)
-menubar.add_cascade(label="文件", menu=file_menu)
+menubar.add_cascade(label="账户", menu=file_menu)
 
 edit_menu = tk.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="编辑", menu=edit_menu)
@@ -46,7 +48,7 @@ insert_menu = tk.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="插入", menu=insert_menu)
 
 td_menu = tk.Menu(menubar, tearoff=0)
-menubar.add_cascade(label="3D", menu=td_menu)
+menubar.add_cascade(label="连接", menu=td_menu)
 
 script_menu = tk.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="脚本", menu=script_menu)
